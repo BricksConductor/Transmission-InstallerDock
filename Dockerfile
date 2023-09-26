@@ -9,4 +9,4 @@ RUN sed -i 's/"rpc-whitelist-enabled": true,/"rpc-whitelist-enabled": false,/g' 
 EXPOSE 3000 7000 42069 5489 9091
 
 
-CMD ["transmission-daemon", "-f"]
+CMD ["transmission-daemon", "-f", "-a", "*.*.*.*"]
