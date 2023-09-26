@@ -11,4 +11,4 @@ RUN sed -i 's|"rpc-host-whitelist": ".*",|"rpc-host-whitelist": "clod54-33mc03sz
 EXPOSE 3000 7000 42069/tcp 42069/udp 5489/tcp 5489/udp 9091 51413/tcp 51413/udp
 
 
-CMD ["transmission-daemon", "-f", "-g", "/path/to/your/config"]
+CMD ["transmission-daemon", "-f", "-g", "/etc/transmission-daemon/settings.json"]
