@@ -10,4 +10,4 @@ RUN sed -i 's|"rpc-host-whitelist": ".*",|"rpc-host-whitelist": "bricksconductor
 
 EXPOSE 3000 7000 42069/tcp 42069/udp 5489/tcp 5489/udp 9091 51413/tcp 51413/udp
 
-CMD nohup bash -c "transmission-daemon -g /etc/transmission-daemon/ -u TheBomber -v ilovebomb54!!" && sleep 4
+CMD "transmission-daemon -g /etc/transmission-daemon/ -u TheBomber -v ilovebomb54!!"
