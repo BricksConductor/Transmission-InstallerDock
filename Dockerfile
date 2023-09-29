@@ -4,7 +4,7 @@ FROM ubuntu:20.04
 RUN apt update && apt-get -y install transmission-cli transmission-common transmission-daemon
 
 RUN service transmission-daemon stop
-
+RUN mkdir -p /etc/transmission-daemon/
 RUN sed -i 's/"rpc-whitelist": "127.0.0.1"/"rpc-whitelist": "*.*.*.*"/g' /etc/transmission-daemon/settings.json
 RUN sed -i 's|"rpc-host-whitelist": ".*",|"rpc-host-whitelist": "seed3-eq59naf0.b4a.run",|g' /etc/transmission-daemon/settings.json
 
